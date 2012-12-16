@@ -12,3 +12,15 @@ RSpec::Matchers.define :have_error_message do |message|
   end
 end
 
+RSpec::Matchers.define :have_h1 do |text|
+  match do |page|
+    page.should have_selector('h1', text: text)
+  end
+end
+
+RSpec::Matchers.define :have_title do |title|
+  match do |page|
+    page.should have_selector('title', text: title)
+  end
+end
+
