@@ -223,3 +223,9 @@ aside {
     margin-bottom: 5px;
   }
 }
+
+#chars_remaining {
+  display: inline;
+  color: $grayLight;
+  float: right;
+}
